@@ -1,0 +1,4 @@
+FROM wolfpeng/tomcat7:1.0.0
+MAINTAINER WolfPeng penghao345@gmail.com
+ADD Web.war  /home/tomcat7/webapp/Web.war
+#RUN chmod 777 /var/lib/tomcat7/deploy
