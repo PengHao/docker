@@ -15,4 +15,5 @@ sudo add-apt-repository \
    stable"
 
 sudo apt-get install docker-ce
+sudo apt-get install docker.io
 sudo apt-get install bridge-utils

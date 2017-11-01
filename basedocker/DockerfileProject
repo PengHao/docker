@@ -1,3 +1,0 @@
-FROM wolfpeng/tomcat7:1.0.0
-MAINTAINER WolfPeng penghao345@gmail.com
-ADD Web.war  /home/tomcat7/webapps/Web.war
