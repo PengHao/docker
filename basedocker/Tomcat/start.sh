@@ -8,4 +8,5 @@ fi
 ${CATALINA_HOME}/bin/startup.sh
 nginx -c ${NGINX_CONF}
 
-curl -v http://127.0.0.1/account/
+curl -v http://127.0.0.1:7001/account/
+tail -f ${CATALINA_OUT}

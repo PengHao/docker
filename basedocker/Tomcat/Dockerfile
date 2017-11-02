@@ -36,8 +36,6 @@ ADD start.sh /home/admin/start.sh
 ADD tomcat7.tar.gz /opt/
 RUN mkdir -p /opt/nginx
 RUN apt-get update \
-	&& apt-get install -y nginx \
-	&& apt-get install -y curl \
 	&& chmod +x /opt/tomcat7/bin/*.sh
 
 ADD nginx.conf /opt/nginx/nginx.conf
