@@ -1,15 +1,14 @@
-#docker run -d -it -p 139:139 445:445 137:137 138:138 -v log:/log registry.wolfpeng.com:5000/wolfpeng/samba:1.0.0 /bin/bash ./home/start.sh
 #I
-PT=/mnt/i
+PT=/mnt/pt
 DOCKER_PT=/mnt/share/pt
 #G
-MUSIC=/mnt/g
+MUSIC=/mnt/music
 DOCKER_MUSIC=/mnt/share/music
 #H
-MOVIE=/mnt/h
+MOVIE=/mnt/movie
 DOCKER_MOVIE=/mnt/share/movie
 #E
-COMMON=/mnt/e
+COMMON=/mnt/common
 DOCKER_COMMON=/mnt/share/common
 
 docker run  -d -it \
@@ -22,4 +21,3 @@ docker run  -d -it \
 	-v ${MOVIE}:${DOCKER_MOVIE} \
 	-v ${COMMON}:${DOCKER_COMMON} \
 	${REGISTRY_PATH}:/wolfpeng/samba:1.0.1
-
