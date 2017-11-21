@@ -21,6 +21,5 @@ docker run  -d -it \
 	-v ${MUSIC}:${DOCKER_MUSIC} \
 	-v ${MOVIE}:${DOCKER_MOVIE} \
 	-v ${COMMON}:${DOCKER_COMMON} \
-	wolfpeng/samba:1.0.1
-#	${REGISTRY_PATH}:/wolfpeng/samba:1.0.1
+	${REGISTRY_PATH}:/wolfpeng/samba:1.0.1
 
